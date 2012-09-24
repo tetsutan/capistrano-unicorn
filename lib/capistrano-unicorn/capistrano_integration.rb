@@ -53,6 +53,11 @@ module CapistranoUnicorn
         # Unicorn rake tasks
         #
         namespace :unicorn do
+
+          def bundle_cmd
+            fetch(:bundle_cmd, "bundle")
+          end
+
           desc 'Start Unicorn master process'
           task :start, :roles => :app, :except => {:no_release => true} do
             if remote_file_exists?(unicorn_pid)
@@ -73,7 +78,7 @@ module CapistranoUnicorn
 
             if remote_file_exists?(config_path)
               logger.important("Starting...", "Unicorn")
-              run "cd #{current_path} && BUNDLE_GEMFILE=#{current_path}/Gemfile bundle exec #{unicorn_bin} -c #{config_path} -E #{app_env} -D"
+              run "cd #{current_path} && BUNDLE_GEMFILE=#{current_path}/Gemfile #{bundle_cmd} exec #{unicorn_bin} -c #{config_path} -E #{app_env} -D"
             else
               logger.important("Config file for \"#{unicorn_env}\" environment was not found at \"#{config_path}\"", "Unicorn")
             end
