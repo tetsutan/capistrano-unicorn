@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CapistranoIntegration	lib/capistrano-unicorn/capistrano_integration.rb	/^  class CapistranoIntegration$/;"	c	class:CapistranoUnicorn
+CapistranoUnicorn	lib/capistrano-unicorn/capistrano_integration.rb	/^module CapistranoUnicorn$/;"	m
+CapistranoUnicorn	lib/capistrano-unicorn/version.rb	/^module CapistranoUnicorn$/;"	m
+bundle_cmd	lib/capistrano-unicorn/capistrano_integration.rb	/^          def bundle_cmd$/;"	f	class:CapistranoUnicorn.CapistranoIntegration.load_into
+load_into	lib/capistrano-unicorn/capistrano_integration.rb	/^    def self.load_into(capistrano_config)$/;"	F	class:CapistranoUnicorn.CapistranoIntegration
+remote_file_exists?	lib/capistrano-unicorn/capistrano_integration.rb	/^        def remote_file_exists?(full_path)$/;"	f	class:CapistranoUnicorn.CapistranoIntegration.load_into
+remote_process_exists?	lib/capistrano-unicorn/capistrano_integration.rb	/^        def remote_process_exists?(pid_file)$/;"	f	class:CapistranoUnicorn.CapistranoIntegration.load_into
+unicorn_get_oldbin_pid	lib/capistrano-unicorn/capistrano_integration.rb	/^        def unicorn_get_oldbin_pid$/;"	f	class:CapistranoUnicorn.CapistranoIntegration.load_into
+unicorn_get_pid	lib/capistrano-unicorn/capistrano_integration.rb	/^        def unicorn_get_pid(pid_file=unicorn_pid)$/;"	f	class:CapistranoUnicorn.CapistranoIntegration.load_into
+unicorn_send_signal	lib/capistrano-unicorn/capistrano_integration.rb	/^        def unicorn_send_signal(pid, signal)$/;"	f	class:CapistranoUnicorn.CapistranoIntegration.load_into
